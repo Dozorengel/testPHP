@@ -17,7 +17,7 @@ export class AppComponent {
   clickout(event) {
     var body = {
       x: event.pageX,
-      y: event.pageX,
+      y: event.pageY,
       ts: + new Date()
     }
     //Отправляем на локальный сервер
