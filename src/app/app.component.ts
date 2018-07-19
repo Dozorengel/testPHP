@@ -29,4 +29,10 @@ export class AppComponent {
     console.log("x: " + event.pageX + ", y: " + event.pageY + ", ts: " + + new Date());
     console.log(body);
   }
+
+  //Для точного позиционирования клика
+  @HostListener('document:mousemove', ['$event']) 
+  onMouseMove(event) {
+    console.log("x: " + event.pageX + ", y: " + event.pageY);
+  }
 }
